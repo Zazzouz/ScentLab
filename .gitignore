@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temp
+*.log
+npm-debug.log*
+.npm
+.cache/
+tmp/
+temp/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Build output (if you add a build step later)
+dist/
+build/
+*.min.js
+*.min.css
