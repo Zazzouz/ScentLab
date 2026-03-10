@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScentLab — Design Your Dream Fragrance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">ScentLab</a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#builder">Builder</a></li>
+        <li><a href="#notes">Notes Library</a></li>
+        <li><a href="#saved">Saved Fragrances</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-background" role="presentation"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Design Your Dream Fragrance</h1>
+        <p class="hero-subtitle">Create your own custom fragrance by combining top, middle, and base notes. Explore scent ingredients and build a unique perfume profile.</p>
+        <div class="hero-actions">
+          <a href="#builder" class="btn btn-primary">Start Creating</a>
+          <a href="#notes" class="btn btn-secondary">Explore Notes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="builder">
+      <div class="container">
+        <h2 class="section-title">What You Can Build</h2>
+        <p class="section-intro">Everything you need to craft a fragrance that feels uniquely yours.</p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◇</div>
+            <h3>Fragrance Builder</h3>
+            <p>Combine top, middle, and base notes in one intuitive workspace.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">△</div>
+            <h3>Fragrance Pyramid Visualization</h3>
+            <p>See how your blend is structured with a clear pyramid view.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">♥</div>
+            <h3>Save Your Fragrance</h3>
+            <p>Store your favorite combinations and come back to them anytime.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◈</div>
+            <h3>Fragrance Note Library</h3>
+            <p>Browse and learn about ingredients from floral to woody notes.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◐</div>
+            <h3>Blend Strength Controls</h3>
+            <p>Adjust the intensity of each note to fine-tune your scent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="notes">
+      <div class="container about-inner">
+        <div class="about-content">
+          <h2>Understanding Fragrance Layers</h2>
+          <p>Perfumes are built in layers: <strong>top notes</strong> hit first and fade quickly, <strong>middle notes</strong> form the heart of the scent, and <strong>base notes</strong> linger the longest. This app helps you experiment with these layers and understand how classic perfumes are structured—so you can design a blend that evolves beautifully from first spray to dry-down.</p>
+        </div>
+        <div class="about-diagram" role="img" aria-label="Fragrance pyramid: top, heart, and base notes with typical duration">
+          <svg viewBox="0 0 260 240" xmlns="http://www.w3.org/2000/svg" class="fragrance-pyramid">
+            <defs>
+              <linearGradient id="top-note" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#e8e4de"/>
+                <stop offset="100%" stop-color="#d4cfc6"/>
+              </linearGradient>
+              <linearGradient id="heart-note" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#c9a962"/>
+                <stop offset="100%" stop-color="#b8a066"/>
+              </linearGradient>
+              <linearGradient id="base-note" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#3d3935"/>
+                <stop offset="100%" stop-color="#2a2724"/>
+              </linearGradient>
+            </defs>
+            <!-- Equilateral triangle, three equal-height layers: base (back), middle, top (front) -->
+            <polygon points="10,225 250,225 210,155 50,155" fill="url(#base-note)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <polygon points="50,155 210,155 170,85 90,85" fill="url(#heart-note)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+            <polygon points="90,85 170,85 130,15" fill="url(#top-note)" stroke="rgba(61,57,53,0.15)" stroke-width="1"/>
+            <text x="130" y="184" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Outfit, sans-serif" font-size="11" font-weight="600">Base notes</text>
+            <text x="130" y="196" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-family="Outfit, sans-serif" font-size="8">2+ hours to all day</text>
+            <text x="130" y="114" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Outfit, sans-serif" font-size="11" font-weight="600">Heart notes</text>
+            <text x="130" y="126" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Outfit, sans-serif" font-size="8">~20 min – 2 hours</text>
+            <text x="130" y="58" text-anchor="middle" fill="#3d3935" font-family="Outfit, sans-serif" font-size="9" font-weight="600">Top notes</text>
+            <text x="130" y="70" text-anchor="middle" fill="#5a554d" font-family="Outfit, sans-serif" font-size="7">~5–15 minutes</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="saved">
+    <div class="container footer-inner">
+      <p class="footer-brand">ScentLab</p>
+      <p class="footer-tagline">Student Project</p>
+      <p class="footer-link"><a href="#" rel="noopener">GitHub</a> (placeholder)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
