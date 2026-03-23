@@ -1,0 +1,31 @@
+/**
+ * Fallback image when a note id is missing from noteImageUrls.json (per family).
+ */
+export const FAMILY_DEFAULT_IMAGE = {
+  citrus:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Citrus_bergamia_-_Bergamot.jpg/960px-Citrus_bergamia_-_Bergamot.jpg",
+  fruits:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Prunus_domestica_ripe_fruits.jpg/960px-Prunus_domestica_ripe_fruits.jpg",
+  floral:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Rosa_gallica_sl101.jpg/960px-Rosa_gallica_sl101.jpg",
+  green:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Fresh_cucumber.jpg/960px-Fresh_cucumber.jpg",
+  spices:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Elettaria_cardamomum.jpg/960px-Elettaria_cardamomum.jpg",
+  aromatic:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Single_lavender_flower02.jpg/960px-Single_lavender_flower02.jpg",
+  aquatic:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sea_salt.jpg/960px-Sea_salt.jpg",
+  woody:
+    "https://upload.wikimedia.org/wikipedia/commons/f/f7/Sandalwood.jpg",
+  "amber-resin":
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Amber_%28resinite%29_%28Baltics%29_2.jpg/960px-Amber_%28resinite%29_%28Baltics%29_2.jpg",
+  gourmand:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cocoa_powder.jpg/960px-Cocoa_powder.jpg",
+  "musk-clean":
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Fruits_and_seeds_of_Abelmoschus_moschatus.jpg/960px-Fruits_and_seeds_of_Abelmoschus_moschatus.jpg",
+  "leather-smoke":
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Leather.jpg/960px-Leather.jpg",
+  earthy:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Vetiver_grass.jpg/960px-Vetiver_grass.jpg",
+};
