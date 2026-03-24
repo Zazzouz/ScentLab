@@ -31,18 +31,24 @@ npm run preview
 
 Root `styles.css` was the original landing stylesheet; the live app copies that look via `src/styles/landing.css`. You can remove `styles.css` / `script.js` if you only use the Vite app.
 
+## Deploy on Netlify
+
+Connect the repo or drag-and-drop the project folder. **Build command:** `npm run build` · **Publish directory:** `dist`  
+(Or rely on root **`netlify.toml`**—already set.)
+
+Production builds use **`base: '/'`** so assets load at the site root (fixes a blank screen). **`netlify.toml`** + **`public/_redirects`** send all routes to `index.html` for React Router.
+
+Redeploy after pulling these changes.
+
 ## Live site (GitHub Pages)
 
-After you turn on **Pages** in the repo (**Settings → Pages → Build and deployment → Source: GitHub Actions**), pushes to `main` deploy automatically.
+The GitHub Actions workflow sets **`GITHUB_PAGES=true`** so the build uses **`base: '/ScentLab/'`**. Turn on **Settings → Pages → Source: GitHub Actions**.
 
-**URL:** [https://zazzouz.github.io/ScentLab/](https://zazzouz.github.io/ScentLab/)  
-(If your GitHub username or repo name differs, update `repo` in `vite.config.js` to match the repo name exactly.)
+If the repo name is not `ScentLab`, change **`GITHUB_PAGES_REPO`** in `vite.config.js` to match.
 
-Production uses `base: '/ScentLab/'`; local `npm run dev` still uses `/`.
+**Example URL:** `https://<user>.github.io/ScentLab/`
 
-## Deploy elsewhere
-
-Build output is in `dist/`. For Netlify/Vercel, set `base: '/'` in `vite.config.js` (or use their env) and configure SPA fallback to `index.html`.
+Local **`npm run dev`** always uses **`base: '/'`**.
 
 ## Student project
 
