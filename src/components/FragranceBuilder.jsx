@@ -10,6 +10,7 @@ import {
   loadSavedFragrances,
   saveSavedFragrances,
 } from "../utils/storage";
+import AiFragranceHelper from "./AiFragranceHelper";
 import NotePyramid from "./NotePyramid";
 import NoteSelector from "./NoteSelector";
 import PerformanceControls from "./PerformanceControls";
@@ -150,6 +151,7 @@ export default function FragranceBuilder() {
 
             <aside className="builder-sidebar">
               <SummaryPanel fragrance={fragrance} />
+              <AiFragranceHelper fragrance={fragrance} />
               <SavedCreations
                 savedList={savedList}
                 onSave={handleSave}
